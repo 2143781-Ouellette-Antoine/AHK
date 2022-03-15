@@ -4,7 +4,8 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;ask user to set the first Entry Box
-registerOriginClick(x,y);save to x and y.
+KeyWait, LButton
+MouseGetPos, x, y   ;Register pos and save to x and y.
 
 ;While Form is not finished
 while(color != "ECEFF!");gray
